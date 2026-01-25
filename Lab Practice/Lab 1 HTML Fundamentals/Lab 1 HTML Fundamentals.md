@@ -81,22 +81,12 @@ By the end of this lab, you will be able to:
 
 ### Instructor Led (5 minutes)
 
-Create a basic HTML5 document:
+Create a basic HTML5 document that displays the following text.
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My First Page</title>
-</head>
-<body>
-    <h1>Welcome to HTML</h1>
-    <p>This is a paragraph.</p>
-</body>
-</html>
-```
+<h1>Welcome to HTML</h1>
+<p>This is a paragraph.</p>
+
+---
 
 **Key Concepts Explained:**
 
@@ -121,7 +111,9 @@ Create a basic HTML5 document:
    - Two paragraphs about why you're learning web development
 3. Save and open in your browser to verify it works
 
-**Expected Result:** See screenshot `module1-structure.png` in the screenshots folder
+**Expected Result:**
+
+![Module 1 - HTML Document Structure](screenshots/module1-structure.png)
 
 **Self-Check:**
 
@@ -135,18 +127,19 @@ Create a basic HTML5 document:
 
 ### Instructor Led (5 minutes)
 
-Demonstrate heading hierarchy and text formatting:
+Demonstrate heading hierarchy and text formatting as shown below.
 
-```html
-<h1>Main Title</h1>
+**Expected Result:**
+
+<fieldset><h1>Main Title</h1>
 <h2>Section Title</h2>
 <h3>Subsection Title</h3>
-<h4>Sub-subsection Title</h4>
-
-<p>This is a <strong>bold text</strong> and this is <em>italic text</em>.</p>
+<h4>Sub-subsection Title</h4><p>This is a <strong>bold text</strong> and this is <em>italic text</em>.</p>
 <p>You can also use <mark>highlighted text</mark> for important information.</p>
 <p>This is <small>fine print</small> and this is <del>deleted text</del>.</p>
-```
+<legend><strong>Rendered Output</strong></legend></fieldset>
+
+---
 
 **Key Concepts Explained:**
 
@@ -171,16 +164,19 @@ Add the following to your `practice.html` (after your existing content):
 4. h3 heading: "Long-term Goals"
 5. A paragraph listing 2 long-term goals, using `<em>` for emphasis
 
-**Example:**
+**Expected Result:**
 
-```html
-<h2>My Goals</h2>
+<fieldset>
+<legend><strong>Rendered Output</strong></legend><h2>My Goals</h2>
 <h3>Short-term Goals</h3>
 <p>I want to <strong>master HTML</strong> by the end of this month,
-complete all lab exercises, and build a personal portfolio website.</p>
-```
+complete all lab exercises, and build a personal portfolio website.</p></fieldset>
 
-**Expected Result:** See screenshot `module2-headings.png`
+---
+
+**Expected Result:**
+
+![Module 2 - Headings and Text Formatting](screenshots/module2-headings.png)
 
 **Self-Check:**
 
@@ -196,8 +192,9 @@ complete all lab exercises, and build a personal portfolio website.</p>
 
 Demonstrate different list types:
 
-```html
-<!-- Unordered list (bullet points) -->
+<fieldset>
+<legend><strong>Rendered Output</strong></legend>
+
 <h3>Shopping List</h3>
 <ul>
     <li>Apples</li>
@@ -205,7 +202,6 @@ Demonstrate different list types:
     <li>Milk</li>
 </ul>
 
-<!-- Ordered list (numbered) -->
 <h3>Recipe Steps</h3>
 <ol>
     <li>Preheat oven to 350°F</li>
@@ -214,7 +210,6 @@ Demonstrate different list types:
     <li>Bake for 30 minutes</li>
 </ol>
 
-<!-- Ordered list with different numbering -->
 <h3>Book Chapters</h3>
 <ol type="I">
     <li>Introduction</li>
@@ -222,7 +217,6 @@ Demonstrate different list types:
     <li>Advanced Topics</li>
 </ol>
 
-<!-- Nested list -->
 <h3>Course Structure</h3>
 <ul>
     <li>Week 1: HTML
@@ -233,7 +227,10 @@ Demonstrate different list types:
     </li>
     <li>Week 2: CSS</li>
 </ul>
-```
+
+</fieldset>
+
+---
 
 **Key Concepts Explained:**
 
@@ -257,14 +254,16 @@ Add to your `practice.html`:
    - Your favorite courses
    - Under each course, list 2-3 topics you enjoy
 
-**Expected Result:** See screenshot `module3-lists.png`
+**Expected Result:**
+
+![Module 3 - Lists](screenshots/module3-lists.png)
 
 **Self-Check:**
 
-- [ ] Unordered list displays with bullet points
-- [ ] Ordered list displays with numbers
-- [ ] Nested list (if attempted) shows indentation
-- [ ] All list items are inside ul or ol tags
+- [X] Unordered list displays with bullet points
+- [X] Ordered list displays with numbers
+- [X] Nested list (if attempted) shows indentation
+- [X] All list items are inside ul or ol tags
 
 ---
 
@@ -274,15 +273,15 @@ Add to your `practice.html`:
 
 Demonstrate different types of links:
 
-```html
-<!-- Internal navigation (jumps to section on same page) -->
+<fieldset>
+<legend><strong>Rendered Output</strong></legend>
+
 <nav>
-    <a href="#about">About</a>
-    <a href="#services">Services</a>
+    <a href="#about">About</a> |
+    <a href="#services">Services</a> |
     <a href="#contact">Contact</a>
 </nav>
 
-<!-- Sections to jump to -->
 <section id="about">
     <h2>About Us</h2>
     <p>Company information here...</p>
@@ -293,16 +292,16 @@ Demonstrate different types of links:
     <p>Service details here...</p>
 </section>
 
-<!-- External link (opens in new tab) -->
 <p>Visit <a href="https://www.w3schools.com" target="_blank" rel="noopener noreferrer">W3Schools</a>
 to learn more.</p>
 
-<!-- Email link -->
 <p>Contact us at <a href="mailto:support@example.com">support@example.com</a></p>
 
-<!-- Phone link -->
 <p>Call us: <a href="tel:+97412345678">+974 1234 5678</a></p>
-```
+
+</fieldset>
+
+---
 
 **Key Concepts Explained:**
 
@@ -326,15 +325,20 @@ Add to your `practice.html`:
 
 **Example:**
 
-```html
+<fieldset>
+<legend><strong>Rendered Output</strong></legend>
+
 <nav>
     <a href="#goals">Goals</a> |
     <a href="#favorites">Favorites</a> |
     <a href="#steps">Steps</a>
 </nav>
-```
+
+---
 
 **Expected Result:** Clicking navigation links should jump to sections
+
+![Module 4 - Links and Navigation](screenshots/module4-links.png)
 
 **Self-Check:**
 
@@ -351,27 +355,9 @@ Add to your `practice.html`:
 
 Demonstrate adding images:
 
-```html
-<!-- Simple image -->
-<img src="images/photo.jpg"
-     alt="A beautiful sunset over the ocean with orange and pink clouds"
-     width="600">
+![Images and Figures Example](screenshots/images-and-figures.png)
 
-<!-- Image with figure and caption -->
-<figure>
-    <img src="images/sales-chart.png"
-         alt="Bar chart showing monthly sales increasing from 10,000 QAR in January to 25,000 QAR in December"
-         width="800">
-    <figcaption>Figure 1: Annual sales growth for 2025</figcaption>
-</figure>
-
-<!-- Multiple images in a figure -->
-<figure>
-    <img src="images/product1.jpg" alt="Red sports car" width="300">
-    <img src="images/product2.jpg" alt="Blue sedan" width="300">
-    <figcaption>Our vehicle collection</figcaption>
-</figure>
-```
+---
 
 **Key Concepts Explained:**
 
@@ -399,7 +385,9 @@ Demonstrate adding images:
 <img src="https://via.placeholder.com/600x400" alt="Placeholder image">
 ```
 
-**Expected Result:** See screenshot `module5-images.png`
+**Expected Result:**
+
+![Module 5 - Images and Figures](screenshots/module5-images.png)
 
 **Self-Check:**
 
@@ -416,9 +404,11 @@ Demonstrate adding images:
 
 Demonstrate creating accessible data tables:
 
-```html
-<table>
-    <caption>Student Grades - Fall 2025</caption>
+<fieldset>
+<legend><strong>Rendered Output</strong></legend>
+
+<table border="1">
+    <caption><strong>Student Grades - Fall 2025</strong></caption>
     <thead>
         <tr>
             <th scope="col">Student Name</th>
@@ -456,7 +446,10 @@ Demonstrate creating accessible data tables:
         </tr>
     </tfoot>
 </table>
-```
+
+</fieldset>
+
+---
 
 **Key Concepts Explained:**
 
@@ -546,7 +539,9 @@ Demonstrate creating accessible data tables:
 - Must use `scope` attributes on all header cells
 - All numerical data must match exactly
 
-**Expected Result:** See screenshot `module6-tables.png`
+**Expected Result:**
+
+![Module 6 - Tables](screenshots/module6-tables.png)
 
 **Self-Check:**
 
@@ -561,12 +556,12 @@ Demonstrate creating accessible data tables:
 
 Congratulations! You've now practiced all the fundamental HTML concepts:
 
-- [x] Document structure
-- [x] Headings and text formatting
-- [x] Lists (ordered and unordered)
-- [x] Links and navigation
-- [x] Images and figures
-- [x] Tables
+- [X] Document structure
+- [X] Headings and text formatting
+- [X] Lists (ordered and unordered)
+- [X] Links and navigation
+- [X] Images and figures
+- [X] Tables
 
 **Save your `practice.html` file** - you'll reference it while building your final project!
 
