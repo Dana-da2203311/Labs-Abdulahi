@@ -354,10 +354,10 @@ Add to your `practice.html`:
 
 **Self-Check:**
 
-- [ ] Clicking navigation links jumps to correct sections
-- [ ] External link opens in new tab
+- [X] Clicking navigation links jumps to correct sections
+- [X] External link opens in new tab
 - [ ] Email link opens email client
-- [ ] All links have proper href attributes
+- [X] All links have proper href attributes
 
 ---
 
@@ -403,10 +403,10 @@ Demonstrate adding images:
 
 **Self-Check:**
 
-- [ ] Images display correctly
-- [ ] Alt text is descriptive (not generic)
-- [ ] At least one image uses figure and figcaption
-- [ ] Images are sized appropriately
+- [X] Images display correctly
+- [X] Alt text is descriptive (not generic)
+- [X] At least one image uses figure and figcaption
+- [X] Images are sized appropriately
 
 ---
 
@@ -557,10 +557,10 @@ Demonstrate creating accessible data tables:
 
 **Self-Check:**
 
-- [ ] Table has a descriptive caption
-- [ ] Headers use `<th>` with proper scope attributes
-- [ ] Data uses `<td>` tags
-- [ ] Table structure is logical and easy to read
+- [X] Table has a descriptive caption
+- [X] Headers use `<th>` with proper scope attributes
+- [X] Data uses `<td>` tags
+- [X] Table structure is logical and easy to read
 
 ---
 
